@@ -22,7 +22,7 @@
     "bundle",
     "browser"
   ],
-  "author": "Brian Donovan",
+  "author": "zhongxingdou@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zhongxingdou/vue-query-parser/issues"
