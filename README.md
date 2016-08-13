@@ -15,7 +15,7 @@ componentName.vue
 import vueQueryParser from 'vue-query-parser'
 
 export default {
-  mixin: [vueQueryParser.vueMixin]
+  mixin: [vueQueryParser.vueMixin],
   queryParser: {
     target: ['pager']
     type: {
