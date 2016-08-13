@@ -16,11 +16,9 @@
     "url": "git+https://github.com/zhongxingdou/vue-query-parser.git"
   },
   "keywords": [
-    "es6",
-    "modules",
-    "rollup",
-    "bundle",
-    "browser"
+    "vue",
+    "vue-plugin",
+    "vue-router"
   ],
   "author": "zhongxingdou@gmail.com",
   "license": "MIT",
