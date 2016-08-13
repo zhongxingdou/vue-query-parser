@@ -20,7 +20,9 @@ describe('vue-query-parser', () => {
         Object.assign(this, {
           $route: new Vue({
             data: {
-              query: {}
+              query: {
+                pageIndex: '9'
+              }
             }
           })
         })
@@ -60,7 +62,11 @@ describe('vue-query-parser', () => {
     })
   })
 
-  it('will reset data before parse query', () => {
+  it('sync query on created', function () {
+    assert.equal(vm.pager.pageIndex, 9)
+  })
+
+  it('reset data before sync query', () => {
     vm.pager = {
       pageIndex: 3,
       pageSize: 20
@@ -77,4 +83,5 @@ describe('vue-query-parser', () => {
       done()
     })
   })
+
 })

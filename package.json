@@ -1,6 +1,6 @@
 {
   "name": "vue-query-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a Vue plugin used to sync data between vue-router query and component data",
   "main": "dist/vue-query-parser.js",
   "jsnext:main": "dist/vue-query-parser.mjs",
