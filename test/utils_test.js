@@ -30,8 +30,8 @@ describe('utils', () => {
     })
   })
 
-  describe('.findMemberByObjPath()', () => {
-    let findMemberByObjPath = utils.findMemberByObjPath
+  describe('.getPathValue()', () => {
+    let getPathValue = utils.getPathValue
     it('normal', () => {
       let obj = {
         a: {
@@ -41,12 +41,12 @@ describe('utils', () => {
         }
       }
 
-      assert.equal(findMemberByObjPath(obj, 'a.b.c'), obj.a.b.c)
-      assert.equal(findMemberByObjPath(obj, 'a.b'), obj.a.b)
-      assert.equal(findMemberByObjPath(obj, 'a'), obj.a)
+      assert.equal(getPathValue(obj, 'a.b.c'), obj.a.b.c)
+      assert.equal(getPathValue(obj, 'a.b'), obj.a.b)
+      assert.equal(getPathValue(obj, 'a'), obj.a)
 
-      expect(findMemberByObjPath(obj, 'a.b.d')).be.an('undefined')
-      expect(findMemberByObjPath(obj, 'b.d')).be.an('undefined')
+      expect(getPathValue(obj, 'a.b.d')).be.an('undefined')
+      expect(getPathValue(obj, 'b.d')).be.an('undefined')
     })
   })
 
